@@ -1,0 +1,144 @@
+/* 主页index.html的样式表 */
+
+.topbar-wrapper{
+    /* 设置全屏宽度 */
+    width: 100%;
+    /* 设置高度和宽度 */
+    line-height: 40px;
+    /* 设置背景颜色 */
+    background-color: #333;
+}
+/* 设置超链接 */
+.topbar a{
+    font-size: 12px;
+    color: #b0b0b0;
+    display: block;
+    
+}
+
+/* 设置超链接hover效果 */
+.topbar a:hover {
+    COLOR:#FFF;
+}
+
+/* 更改li的display，用于去除li::marker 伪元素 */
+.topbar li {
+    display: block;
+}
+
+/* 分割线效果 */
+.topbar .line {
+    color: #424242;
+    font-size: 10px;
+    vertical-align: middle;
+    margin: 0 8px;
+}
+
+/* 设置左侧导航栏 */
+.nav-groups, .topbar li{
+    float: left;
+}
+
+.app{
+    position: relative;
+}
+
+
+/* 设置app下的小三角 */
+.app::after{
+    display: none;
+    content: '';
+    position: absolute;
+    line-height: 1;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-top: none;
+    border-bottom-color: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.app:hover .download-qrcode{
+    height: 148px;
+}
+.app:hover::after{
+    display: block;
+}
+
+.app .download-qrcode{
+    /* display: none; */
+    position: absolute;
+    width: 124px;
+    height: 0;
+    overflow: hidden;
+    background-color: #FFF;
+    line-height: 1;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    left: -40px;
+    right: 0;
+    margin: auto;
+    /* 用于为样式设置过渡效果 */
+    transition: height .2s;
+}
+
+.app .download-qrcode span{
+    color: #000;
+    font-size: 14px;
+}
+
+.app .download-qrcode img{
+    width: 90px;
+    margin: 17px
+}
+
+.app:hover{
+    display: block;
+}
+
+/* 设置右侧用户信息 */
+.user-info{
+    float: right;
+}
+
+.user-info a{
+    padding: 0 5px;
+}
+
+/* 设置购物车 */
+.shop-cart {
+    width: 120px;
+    float: right;
+    background-color: #424242;
+    margin-left: 25px;
+}
+
+.shop-cart ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-cart ul:hover{
+    background-color: #FFF;
+    color:#FF6700;
+}
+
+.shop-cart a:hover{
+    color:#FF6700;
+}
+
+.shop-cart a{
+    text-align: center;
+    align-self: center;
+}
+
+.shop-cart i {
+    margin-right: 2px;
+}
+
+.menu-content {
+    background-color: #fff;
+}

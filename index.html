@@ -1,15 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>小米商城 - 小米10 Pro、Redmi 10X、小米MIX Alpha，小米电视官方网站</title>
-    <meta name="description" content="小米官网直营小米公司旗下所有产品，包括小米手机系列小米10 Pro 、小米9、小米MIX Alpha，Redmi 红米系列Redmi 10X、Redmi K30，小米电视、笔记本、米家智能家居等，同时提供小米客户服务及售后支持.">
-    <meta name="keywords" content="小米,redmi,小米10,Redmi 10X,小米MIX Alpha,小米商城">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      小米商城 - 小米10 Pro、Redmi 10X、小米MIX Alpha，小米电视官方网站
+    </title>
+    <meta
+      name="description"
+      content="小米官网直营小米公司旗下所有产品，包括小米手机系列小米10 Pro 、小米9、小米MIX Alpha，Redmi 红米系列Redmi 10X、Redmi K30，小米电视、笔记本、米家智能家居等，同时提供小米客户服务及售后支持."
+    />
+    <meta
+      name="keywords"
+      content="小米,redmi,小米10,Redmi 10X,小米MIX Alpha,小米商城"
+    />
     <!-- 引入重置样式表 -->
-    <link rel="stylesheet" href="./css/reset.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- 引入字体图标库 -->
+    <link rel="stylesheet" href="./fa/css/all.css" />
+    <!-- 引入公共样式表 -->
+    <link rel="stylesheet" href="./css/base.css" />
+    <!-- 引入当前页面的样式表 -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!-- 创建顶部导航条 -->
+    <!-- 创建顶部导航条外部容器 -->
+    <div class="topbar-wrapper">
+      <!-- 创建内部容器 -->
+      <div class="topbar w1226 clearfix">
+        <!-- 头部导航条 -->
+        <div class="nav-groups">
+          <ul class="service">
+            <li><a href="javascript:;">小米商城</a></li>
+            <li class="line">|</li>
+            <li><a href="javascript:;">MIUI</a></li>
+            <li class="line">|</li>
+            <li><a href="javascript:;">IOT</a></li>
+            <li class="line">|</li>
+            <li><a href="javascript:;">云服务</a></li>
+            <li class="line">|</li>
+            <li><a href="javascript:;">金融</a></li>
+            <li class="line">|</li>
+            <li><a href="javascript:;">有品</a></li>
+            <li class="line">|</li>
+            <li><a href="javascript:;">小爱开放平台</a></li>
+            <li class="line">|</li>
+            <li><a href="javascript:;">企业团购</a></li>
+            <li class="line">|</li>
+            <li><a href="javascript:;">资质证照</a></li>
+            <li class="line">|</li>
+            <li><a href="javascript:;">协议规则</a></li>
+            <li class="line">|</li>
+            <li><a class="app" href="javascript:;">下载app
+                <!-- 添加弹出层 -->
+                <div class="download-qrcode">
+                    <img src="./imgs/download.png" alt="">
+                    <span>小米商城app</span>
+                </div>
+            </a>
+            </li>
+            <li class="line">|</li>
+            <li><a href="javascript:;">智能生活</a></li>
+            <li class="line">|</li>
+            <li><a href="javascript:;">Select Location</a></li>
+          </ul>
+        </div>
+        <!-- 购物车 -->
+        <div class="shop-cart">
+          <ul>
+            <li><a href="javascript:;">
+                <i class="fas fa-shopping-cart"></i>
+                购物车（0）
+            </a></li>
+          </ul>
+
+          <div class="menu-content">
+              <!-- <ul class="J_miniCartList"></ul>
+              <div class="cart-total clearfix"></div>
+              <div class="msg msg-error"></div> -->
+              <div class="msg msg-empty">购物车中还没有商品，赶紧选购吧！</div>
+          </div>
+        </div>
+        <!-- 用户信息 -->
+        <div class="user-info">
+            <ul>
+              <li><a href="javascript:;">登录</a></li>
+              <li class="line">|</li>
+              <li><a href="javascript:;">注册</a></li>
+              <li class="line">|</li>
+              <li><a href="javascript:;">消息通知</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </body>
 </html>
