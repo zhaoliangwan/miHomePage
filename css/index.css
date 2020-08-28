@@ -77,7 +77,7 @@
     background-color: #FFF;
     line-height: 1;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    box-shadow: 0 1px 10px rgba(0,0,0,.3);
     left: -40px;
     right: 0;
     margin: auto;
@@ -112,33 +112,110 @@
 .shop-cart {
     width: 120px;
     float: right;
+    width: 120px;
+    height: 40px;
     background-color: #424242;
-    margin-left: 25px;
+    margin-left: 15px;
+    vertical-align: -4px;
+    font-size: 12px;
+    position: relative;
+    z-index: 9999;
 }
 
 .shop-cart ul{
     display: flex;
     flex-direction: column;
+    
 }
 
-.shop-cart ul:hover{
-    background-color: #FFF;
+
+.shop-cart:hover{
+    background-color: #fff;
     color:#FF6700;
+    z-index: 32;    
 }
 
-.shop-cart a:hover{
+.shop-cart:hover a {
     color:#FF6700;
 }
 
 .shop-cart a{
     text-align: center;
     align-self: center;
+    height: 40px;
+    line-height: 40px;
 }
 
 .shop-cart i {
+    position: relative;
     margin-right: 2px;
+}
+
+.shop-cart:hover .menu-content{
+    height: 100px;
 }
 
 .menu-content {
     background-color: #fff;
+    position: absolute;
+    width: 316px;
+    height: 0px;
+    overflow: hidden;
+    font-size: 12px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .15);
+    top: 40px;
+    left: -196px;
+    z-index: 31;
+}
+
+.msg-empty {
+    line-height: 100px;
+    text-align: center;
+    margin: 0 20px;
+    color: #424242;
+}
+
+/* 设置中间header */
+.header {
+    height: 100px;
+    line-height: 100px;
+    vertical-align: middle;
+}
+
+.header .logo {
+    float: left;
+    width: 55px;
+    height: 55px;
+    position: relative;
+    margin: 22.5px 0;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+.header .logo a {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 0;
+    background-color: #FF6700;
+    transition: left 0.3s;
+}
+
+.header .logo .home {
+    left: -55px;
+    background-image: url(../imgs/mi-home.png);
+    background-position: center;
+}
+
+.header .logo .mi {
+    background-image: url(../imgs/mi-logo.png);
+    background-position: center;
+}
+
+.header .logo:hover .mi{
+    left: 55px;
+}
+
+.header .logo:hover .home{
+    left: 0;
 }
